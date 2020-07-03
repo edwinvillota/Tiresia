@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Crear Cliente</title>
+</head>
+<body>
+  <form>
+    <div class='form-header'>
+      <h1>Crear Cliente</h1>
+    </div>
+    <div class='form-body'>
+      <label for='id'>Identificación</label>
+      <input id='id' type="text" pattern="([0-9]|-)*" placeholder="Identificación" required>
+      <label for='name'>Nombre</label>
+      <input id='name' type="text" placeholder="Nombre">
+      <label for='phone'>Teléfono</label>
+      <input id='phone' type='number' placeholder="Teléfono">
+      <label for='address'>Dirección</label>
+      <input id='address' type="text" placeholder="Dirección">
+      <label for='country'>Pais</label>
+      <select id='country' value='0'>
+        <option value="0"></option>
+      </select>
+      <label for='state'>Departamento</label>
+      <select id='state' value='0'>
+        <option value="0"></option>
+      </select>
+      <label for='state'>Ciudad</label>
+      <select id='city' value='0'>
+        <option value="0"></option>
+      </select>
+      <button type='submit'>
+        Enviar
+      </button>
+    </div>
+  </form>
+  <script type='module' src="./src/index.js"></script>
+</body>
+</html>
